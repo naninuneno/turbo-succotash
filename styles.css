@@ -1,6 +1,7 @@
 body {
 	padding: 10px 10px 10px 10px;
 	color: #f8f9e9;
+	background-color: #3d3d3d;
 }
 
 h1, h2, h3, h4 {
@@ -14,3 +15,13 @@ input#navbar-search {
 div#navbar-search-container {
 	padding-right: 5px;
 }
+
+/*.carousel-control.left {
+	border-top-left-radius: 100px;
+	border-bottom-left-radius: 100px;
+}
+
+.carousel-control.right {
+	border-top-right-radius: 100px;
+	border-bottom-right-radius: 100px;
+}*/
