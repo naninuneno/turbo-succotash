@@ -4,6 +4,7 @@
 <title>Testing Components</title>
 <link rel="stylesheet" type="text/css" href="bootstrap-css/bootstrap.darkly.min.css">
 <link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" href="fontawesome-css/font-awesome.min.css">
 </head>
 <body>
 
@@ -18,24 +19,25 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Brand</a>
+      <a class="navbar-brand" href="index.html">
+        <img id="logo-small" class="logo" class="img-responsive center-block" src="logo.png" alt="Logo"/>
+      </a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
+        <li class="active"><a href="#">About <span class="sr-only">(current)</span></a></li>    
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shows <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
+            <li><a href="#">Les Miserables</a></li>
+            <li><a href="#">Jekyll and Hyde</a></li>
+            <li><a href="#">1984</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
+            <li><a href="#">War Horse</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
+            <li><a href="#">Lion King</a></li>
           </ul>
         </li>
       </ul>
@@ -43,11 +45,11 @@
         <div id="navbar-search-container" class="form-group">
           <input id="navbar-search" type="text" class="form-control" placeholder="Search">
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
+        <button type="submit" class="btn btn-default">Search</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
+        <li><a href="#">Contact</a></li>
+        <!--<li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>
@@ -56,13 +58,11 @@
             <li role="separator" class="divider"></li>
             <li><a href="#">Separated link</a></li>
           </ul>
-        </li>
+        </li>-->
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-
-<br><br><br>
 
 <!-- Carousel -->
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -70,20 +70,16 @@
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
   </ol>
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item item active">
-      <img class="img-responsive center-block" src="img1.jpg" alt="First slide">
+      <img class="img-responsive center-block" src="war-horse.jpg" alt="First slide">
     </div>
     <div class="carousel-item item">
-      <img class="img-responsive center-block" src="img2.jpg" alt="Second slide">
+      <img class="img-responsive center-block" src="les-mis.jpg" alt="Second slide">
     </div>
     <div class="carousel-item item">
-      <img class="img-responsive center-block" src="img3.jpg" alt="Third slide">
-    </div>
-    <div class="carousel-item item">
-      <img class="img-responsive center-block" src="sam.jpg" alt="Fourth slide">
+      <img class="img-responsive center-block" src="1984.jpg" alt="Third slide">
     </div>
   </div>
   <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
@@ -95,6 +91,8 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+
+<div id="page-content">
 
 <br><br><br>
 <a id="home-link" href="index.html">Test Link</a>
@@ -147,11 +145,66 @@
 
 <br>
 
-</div>
-</div>
-
 <br>
 <button class="btn btn-primary">Test Button</button>
+
+</div> <!-- page-content -->
+</div> <!-- ?? -->
+</div> <!-- ?? -->
+
+<footer class="footer-distributed">
+
+  <div class="footer-left">
+
+    <img id="logo-large" class="logo" class="img-responsive center-block" src="logo.png" alt="Logo"/>
+
+    <p class="footer-links">
+      <a href="#">About</a>
+      <a href="#">Faq</a>
+      <a href="#">Contact</a>
+    </p>
+
+    <p class="footer-company-name">Harland Theatre &copy; 2016</p>
+  </div>
+
+  <div class="footer-center">
+
+    <div>
+      <i class="fa fa-map-marker"></i>
+      <p><span>23 Titanic Quarter</span> Belfast, Northern Ireland</p>
+    </div>
+
+    <div>
+      <i class="fa fa-phone"></i>
+      <p>+1 555 123456</p>
+    </div>
+
+    <div>
+      <i class="fa fa-envelope"></i>
+      <p><a href="mailto:support@company.com">support@company.com</a></p>
+    </div>
+
+  </div>
+
+  <div class="footer-right">
+
+    <p class="footer-company-about">
+      <span>About the company</span>
+      Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+    </p>
+
+    <div class="footer-icons">
+
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-github"></i></a>
+
+    </div>
+
+  </div>
+
+</footer>
 
 <script type="text/javascript" src="bootstrap-js/jquery-2.2.4.min.js"></script>
 <script type="text/javascript" src="bootstrap-js/bootstrap.min.js"></script>
