@@ -1,3 +1,14 @@
+/* To Do: 
+
+*	move bootstrap-specific stuff to a 
+	bootstrap-override.css file or something
+	
+*	clean up !important stuff - just confusing
+
+*	nail down a colour scheme - red/dark-grey or blue/light-grey?
+
+*/
+
 body {
 	color: #E5DFC5;
 	background-image: url("bg-bl.png");
@@ -59,6 +70,7 @@ div#navbar-search-container {
 
 .navbar {
 	background-color: #A92F41;
+	margin-bottom: 0px;
 }
 
 .navbar-nav > .active > a, 
@@ -69,30 +81,26 @@ div#navbar-search-container {
 
 .navbar-nav > li > a:hover {
 	color: #d7cfa7 !important;
+	background-color: #77222f !important;
+}
+
+.navbar-nav > li > a:focus {
+	color: #E5DFC5 !important;
+	background-color: #A92F41 !important;
 }
 
 a {
 	color: #91C7A9;
+	text-decoration: none !important;
 }
 
-/*.carousel-control.left {
-	border-top-left-radius: 100px;
-	border-bottom-left-radius: 100px;
+.navbar a {
+	color: #E5DFC5 !important;
 }
-
-.carousel-control.right {
-	border-top-right-radius: 100px;
-	border-bottom-right-radius: 100px;
-}*/
-
-
-
-
-
 
 /* FOOTER STUFF */
 
-.footer-distributed{
+.footer-distributed {
 	background-color: #231f20;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
@@ -101,7 +109,6 @@ a {
 	font: bold 16px sans-serif;
 
 	padding: 25px 20px;
-	margin-top: 40px;
 }
 
 .footer-distributed .footer-left,
@@ -123,10 +130,6 @@ a {
 	color:  #ffffff;
 	font: normal 36px 'Cookie', cursive;
 	margin: 0;
-}
-
-.footer-distributed h3 span{
-	color:  #5383d3;
 }
 
 /* Footer links */
@@ -193,12 +196,6 @@ a {
 	font-size:14px;
 	line-height:2;
 }
-
-.footer-distributed .footer-center p a{
-	color:  #5383d3;
-	text-decoration: none;;
-}
-
 
 /* Footer Right */
 
