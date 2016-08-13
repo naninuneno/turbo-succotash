@@ -104,9 +104,29 @@ a {
 	color: #E5DFC5 !important;
 }
 
-#building, #show {
-	padding-top: 20px;
-	padding-bottom: 20px;
+#building, .show {
+	padding: 15px 15px 15px 15px;
+	float: right;
+}
+
+.show {
+	max-width: 50%;
+}
+
+#show-booking, #show-reviews {
+	display: inline-block;
+	width: 49%;
+	vertical-align: top;
+}
+
+/* Form */
+form {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+select, option {
+	color: black;
 }
 
 /* FOOTER STUFF */

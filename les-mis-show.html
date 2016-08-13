@@ -39,11 +39,11 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <!-- sr-only to give context that this is the current menu-item selected -->
-        <li class="active"><a href="about.html">About <span class="sr-only">(current)</span></a></li>  
-        <li class="dropdown">
+        <li><a href="about.html">About </a></li>
+        <li class="active dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shows <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Les Miserables</a></li>
+            <li><a href="les-mis-show.html">Les Miserables</a></li>
             <li><a href="#">War Horse</a></li>
             <li><a href="#">Lion King</a></li>
             <li><a href="#">Macbeth</a></li>
@@ -62,35 +62,53 @@
   </div>
 </nav>
 
-<div id="page-content">
-  <!-- bootstrap row to specify side by cells-->
-  <div class="row">
-    <!-- xs-7 is 7 columns for left size, from an extra small screen upwards -->
-    <div class="col-xs-7">
-      <p id="page-title"><b><u>About</u></b></p>
-      <br>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+<div id="page-content">  
+  <img class="show img-responsive" src="img/les-mis.jpg" alt="Les Miserables"/>
+  <p id="page-title"><b><u>Les Miserables</u></b></p>
+  <br>
+  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+  <br><br>
+  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+  <br><br>
+  Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+  <br><br>
+  Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? 
+  <br><br>
+  Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. 
+  <br><br>
+  Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. 
+  <br><br>
+  Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+  </p>
+  <hr>
+  <div id="show-more">
+    <div id="show-booking">
+      <p><b><u>Book</u></b><p>
+      <form>
+        <select>
+          <option value="2016-09-01-15-00">September 1st 2016 - 15:00</option>
+          <option value="2016-09-01-19-00">September 1st 2016 - 19:00</option>
+          <option value="2016-09-03-17-00">September 3rd 2016 - 17:00</option>
+          <option value="2016-09-04-19-00">September 4th 2016 - 19:00</option>
+        </select>
+        <br>
+        <br>
+        <input id="book" type="submit" value="Book">
+      </form>
     </div>
-    <!-- xs-5 is 5 columns for right side, from an extra small screen upwards -->
-    <div class="col-xs-5">
-      <img class="show img-responsive" src="img/les-mis.jpg" alt="Les Miserables"/>
+    <div id="show-reviews">
+      <p><b><u>Reviews</u></b><p>
+      <p><em>Excellent</em></p>
+      <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+      <p><em>Outstanding</em></p>
+      <p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+      <p><em>Meh</em></p>
+      <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+      <p><em>Could have been better</em></p>
+      <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
     </div>
   </div>
-  <p>
-    <br><br>
-    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
-    <br><br>
-    Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-    <br><br>
-    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? 
-    <br><br>
-    Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. 
-    <br><br>
-    Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. 
-    <br><br>
-    Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
-  </p>
 </div>
 
 <!-- Footer -->
