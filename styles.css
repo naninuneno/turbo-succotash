@@ -126,6 +126,14 @@ a {
 	vertical-align: top;
 }
 
+#reviews-left {
+	padding-right: 10px;
+}
+
+#reviews-right {
+	padding-left: 10px;
+}
+
 .review {
 	padding-top: 15px;
 }
@@ -304,11 +312,19 @@ select, option {
 }
 
 /* Responsiveness for small width */
-
 @media (max-width: 880px) {
 
 	.content-block {
 		width: 49%;
+	}
+
+	/* so that reviews go from inline to stacked on top of eachother
+		so they're single column on narrower screen */
+	#reviews-left, #reviews-right {
+		display: block;
+		width: 100%;
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 
 	.footer-distributed {
@@ -328,4 +344,18 @@ select, option {
 		margin-left: 0;
 	}
 
+}
+
+/* Responsiveness for smaller width */
+@media (max-width: 630px) {
+	select {
+		width: 90%;
+	}
+}
+
+/* Responsiveness for very small width */
+@media (max-width: 360px) {
+	#page-title {
+		font-size: 1.75em;
+	}
 }
