@@ -47,9 +47,9 @@ p, a, li, span {
 	font-size: 1.25em;
 }
 
-input#navbar-search {
+/*input#navbar-search {
 	width: 300px;
-}
+}*/
 
 /* The company logo */
 
@@ -81,7 +81,8 @@ div#navbar-search-container {
 
 .navbar-nav > .active > a, 
 .navbar-nav > .open > a,
-.dropdown-menu > li > a:hover {
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
 	background-color: #77222f !important;
 }
 
@@ -92,7 +93,6 @@ div#navbar-search-container {
 
 .navbar-nav > li > a:focus {
 	color: #E5DFC5 !important;
-	background-color: #A92F41 !important;
 }
 
 a {
@@ -138,6 +138,29 @@ form {
 
 select, option {
 	color: black;
+}
+
+/* Shows / Offers */
+.content-block {
+	display: inline-block;
+	width: 33%;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 15px;
+	vertical-align: top;
+	text-align: center;
+}
+
+/* used for shows/offers */
+.brightness {
+	display: inline-block;
+	background-color: white;
+}
+
+/* opacity to show whiteness to give a 'brightening' effect
+	- responsive to user hovering on a show/offer */
+.brightness img:hover {
+	opacity: 0.8;
 }
 
 /* FOOTER STUFF */
@@ -280,24 +303,28 @@ select, option {
 	margin-bottom: 5px;
 }
 
-/* If you don't want the footer to be responsive, remove these media queries */
+/* Responsiveness for small width */
 
 @media (max-width: 880px) {
 
-	.footer-distributed{
+	.content-block {
+		width: 49%;
+	}
+
+	.footer-distributed {
 		font: bold 14px sans-serif;
 	}
 
 	.footer-distributed .footer-left,
 	.footer-distributed .footer-center,
-	.footer-distributed .footer-right{
+	.footer-distributed .footer-right {
 		display: block;
 		width: 100%;
 		margin-bottom: 40px;
 		text-align: center;
 	}
 
-	.footer-distributed .footer-center i{
+	.footer-distributed .footer-center i {
 		margin-left: 0;
 	}
 
