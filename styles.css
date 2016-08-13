@@ -114,6 +114,10 @@ a {
 	max-width: 50%;
 }
 
+#show-info {
+	overflow: auto; 
+}
+
 #book-show {
 	border: 2px solid #E5DFC5;
 	margin-top: 10px;
@@ -127,11 +131,11 @@ a {
 }
 
 #reviews-left {
-	padding-right: 10px;
+	padding-right: 25px;
 }
 
 #reviews-right {
-	padding-left: 10px;
+	padding-left: 25px;
 }
 
 .review {
@@ -325,6 +329,10 @@ select, option {
 		width: 100%;
 		padding-left: 0px;
 		padding-right: 0px;
+	}
+
+	.review {
+		padding-top: 25px;
 	}
 
 	.footer-distributed {
