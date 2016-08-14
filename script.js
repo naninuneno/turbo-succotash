@@ -28,3 +28,43 @@ function getQueryVariable(variable) {
 	}
 
 })();
+
+setSeatsBooked();
+document.getElementById("booking-time").onchange=function() {
+	setSeatsBooked();
+}
+
+var seatNumberLabel = document.getElementById("seats-number");
+var allcells = document.getElementsByClassName("cell");
+for (var i = 0; i < allcells.length; i++) {
+	allcells[i].onclick = function(e) {
+		var cell = e.target;
+		setSingleSeatBooked(cell);
+	}
+}
+
+function setSingleSeatBooked(cell) {
+	var seatsNo = parseInt(seatNumberLabel.innerHTML);
+	if (cell.style.backgroundColor == "green") {
+		cell.style.backgroundColor = "orange";
+		seatNumberLabel.innerHTML = ++seatsNo; 
+	} else if (cell.style.backgroundColor == "orange") {
+		cell.style.backgroundColor = "green";
+		seatNumberLabel.innerHTML = --seatsNo;
+	}
+}
+
+function setSeatsBooked() {
+	var cells = document.getElementsByClassName("cell");
+	// reset all cells to available
+	for (var i = 0; i < cells.length; i++) {
+		cells[i].style.backgroundColor = "green";
+	}
+
+	// randomly set seats unavailable
+	for (var i = 0; i < cells.length; i++) {
+  		if (Math.random() < 0.35) {
+    		cells[i].style.backgroundColor = "red";
+  		}
+	}
+}

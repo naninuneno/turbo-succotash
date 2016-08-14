@@ -195,8 +195,45 @@ select, option {
 	opacity: 0.8;
 }
 
-/* FOOTER STUFF */
 
+/* Seats availability interactive diagram */
+#availability-diagram {
+	margin-left: 25%;
+	height: 800px;
+	width: 50%;
+}
+
+#availability-stage {
+	height: 300px;
+	width: 90%;
+	background-color: grey;
+	border-radius: 25px;
+	margin-bottom: 30px;
+	margin-left: 10px;
+}
+
+#availability-seats {
+	height: 500px;
+	padding-bottom: 30px;
+}
+
+.row {
+	height: 10%;
+	width: 100%;
+	padding-bottom: 3px;
+}
+
+.cell {
+	display: inline-block;
+	height: 100%;
+	width: 9%;
+	background-color: green;
+	padding-right: 3px;
+	border-radius: 25px;
+}
+
+
+/* FOOTER STUFF */
 .footer-distributed {
 	background-color: #231f20;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -377,6 +414,11 @@ select, option {
 /* Responsiveness for smaller width */
 @media (max-width: 630px) {
 	select, textarea {
+		width: 90%;
+	}
+
+	#availability-diagram {
+		margin-left: 5%;
 		width: 90%;
 	}
 }
