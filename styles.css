@@ -23,10 +23,6 @@ body {
 	font-size: 2em;
 }
 
-h1, h2, h3, h4 {
-	color: #A92F41;
-}
-
 h1 {
 	font-size: 4em;
 }
@@ -47,10 +43,6 @@ p, a, li, span {
 	font-size: 1.25em;
 }
 
-/*input#navbar-search {
-	width: 300px;
-}*/
-
 /* The company logo */
 
 .logo {
@@ -67,7 +59,7 @@ p, a, li, span {
 }
 
 .navbar-brand {
-	padding: 0 !important;
+	padding: 0;
 }
 
 div#navbar-search-container {
@@ -79,20 +71,30 @@ div#navbar-search-container {
 	margin-bottom: 0px;
 }
 
-.navbar-nav > .active > a, 
-.navbar-nav > .open > a,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus, 
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus,
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
-	background-color: #77222f !important;
+	color: #d7cfa7;
+	background-color: #77222f;
 }
 
-.navbar-nav > li > a:hover {
-	color: #d7cfa7 !important;
-	background-color: #77222f !important;
+.navbar-nav > li > a {
+	transition: background-color 0.5s ease;
 }
 
-.navbar-nav > li > a:focus {
-	color: #E5DFC5 !important;
+.navbar-default .navbar-nav > li > a:hover {
+	color: #d7cfa7;
+	background-color: #77222f;
+}
+
+.navbar-default .navbar-nav > li > a:focus {
+	color: #d7cfa7;
+	color: #E5DFC5;
 }
 
 a {
@@ -100,8 +102,8 @@ a {
 	text-decoration: none !important;
 }
 
-.navbar a {
-	color: #E5DFC5 !important;
+a:hover, a i:hover {
+	color: #0ce3ac;
 }
 
 #building, .show {
@@ -148,6 +150,15 @@ form {
 	padding-bottom: 15px;
 }
 
+form label {
+	min-width: 75px;
+}
+
+form input.text-input {
+	padding-left: 3px;
+	width: 250px;
+}
+
 select, option {
 	color: black;
 }
@@ -167,6 +178,10 @@ select, option {
 .brightness {
 	display: inline-block;
 	background-color: white;
+}
+
+.brightness img {
+	transition: opacity 0.5s ease;
 }
 
 /* opacity to show whiteness to give a 'brightening' effect

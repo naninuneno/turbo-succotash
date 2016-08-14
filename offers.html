@@ -1,6 +1,5 @@
 <!-- General Documentation
-* sr-only       only for purpose of screenreaders - visibly hidden
-* aria-hidden   hide from screenreaders - unnecessary info
+* sr-only does SCREENREADER STUFF hides an element and says stuff 
 -->
 
 <!-- Accessibility stuff 
@@ -41,7 +40,7 @@
       <ul class="nav navbar-nav">
         <!-- sr-only to give context that this is the current menu-item selected -->
         <li><a href="about.html">About </a></li>
-        <li class="active dropdown">
+        <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shows <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="les-mis-show.html">Les Miserables</a></li>
@@ -54,7 +53,7 @@
             <li role="separator" class="divider"></li>
           </ul>
         </li>
-        <li><a href="offers.html">Offers </a></li>
+        <li class="active"><a href="offers.html">Offers <span class="sr-only">(current)</span></a></li>  
         <li><a href="booking.html">Booking </a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -65,72 +64,36 @@
 </nav>
 
 <div id="page-content">  
-  <div id="show-info">
-    <div class="show">
-      <img class="img-responsive" src="img/macbeth.jpg" alt="Macbeth"/>
-
-      <div id="book-show">
-        <p><b><u>Book</u></b><p>
-        <form action="booking.html">
-          <input aria-hidden="true" type="hidden" name="show" value="macbeth">
-          <label for="time">Time</label>
-          <select name="time" id="time">
-            <option value="2016-09-01-15-00">September 1st 2016 - 15:00 | 56 Seats</option>
-            <option value="2016-09-01-19-00">September 1st 2016 - 19:00 | 62 Seats</option>
-            <option value="2016-09-03-17-00">September 3rd 2016 - 17:00 | 20 Seats</option>
-            <option value="2016-09-04-19-00">September 4th 2016 - 19:00 | 34 Seats</option>
-          </select>
-          <br>
-          <br>
-          <input id="book" type="submit" value="Book">
-        </form>
-      </div>
-    </div>
-    <p id="page-title"><b><u>Macbeth</u></b></p>
-    <br>
-    <p>
-  On a barren heath, three sisters tell the great and bloodied Macbeth that he is fated to be King of Scotland. And so begins a terrifying series of events that lead to the murder of Kings, friends, mothers and their children. Macbeth and his Lady fall prey to a soul-corroding guilt as they desperately try and cling to the defiled crown.
-  <br><br>
-  The title role is Shakespeare's most brutal and poetic creation and the play his most unsettling engagement with the supra-natural and the nature of evil. Enter the unique intensity of the Globe as this cycle of wondrous horrors captures our imagination once again...
-    </p>
+  <p id="page-title"><b><u>Offers</u></b></p>
+  <div class="content-block">
+    <a href="offer1.html">
+    <div class="brightness"><img class="img-responsive" src="img/offer1.jpg" alt="Tenner Tuesdays"/></div>
+    <span><em>Tenner Tuesdays</em></span></a>
   </div>
-  <hr>
-  <div id="show-more">
-    <p><b><u>Reviews</u></b><p>
-    <div id="reviews-left">
-      <div class="review">
-        <span><em>"Bold and visceral... a luminously intelligent performance by John Heffernan"</em>
-        <br>
-        - Financial Times</span>
-      </div>
-      <div class="review">
-        <span><em>"A bold makeover - John Heffernan's macbeth speaks the verse with extraordinary intelligence"</em>
-        <br>
-        - The Independent</span>
-      </div>
-      <div class="review">
-        <span><em>"A fantastic ride, full of sound and fury - Heffernan is great"</em>
-        <br>
-        - Time Out</span>
-      </div>
-    </div>
-    <div id="reviews-right">
-      <div class="review">
-        <span><em>"Stylish and daring"</em>
-        <br>
-        - Evening Standard</span>
-      </div>
-      <div class="review">
-        <span><em>"A viscerally exciting production - Anna Maxwell Martin is an alarmingly cool, svelte Lady Macbeth"</em>
-        <br>
-        - The Guardian</span>
-      </div>
-      <div class="review">
-        <span><em>"Bold and uncompromising. Shakespeare at his finest."</em>
-        <br>
-        - Stage Weekly</span>
-      </div>
-    </div>
+  <div class="content-block">
+    <a href="offer2.html">
+    <div class="brightness"><img class="img-responsive" src="img/offer2.jpg" alt="TO DO"/></div>
+    <span><em>Soil yourself for free admission</em></span></a>
+  </div>
+  <div class="content-block">
+    <a href="offer3.html">
+    <div class="brightness"><img class="img-responsive" src="img/offer3.jpg" alt="Kids Half-Price"/></div>
+    <span><em>Kids Half-Price</em></span></a>
+  </div>
+  <div class="content-block">
+    <a href="offer4.html">
+    <div class="brightness"><img class="img-responsive" src="img/offer4.jpg" alt="2 for 1"/></div>
+    <span><em>2 for 1</em></span></a>
+  </div>
+  <div class="content-block">
+    <a href="offer5.html">
+    <div class="brightness"><img class="img-responsive" src="img/offer5.jpg" alt="Group Discount"/></div>
+    <span><em>Group Discount</em></span></a>
+  </div>
+  <div class="content-block">
+    <a href="offer6.html">
+    <div class="brightness"><img class="img-responsive" src="img/offer6.jpg" alt="TO DO"/></div>
+    <span><em>Offer your soul to the dark lord</em></span></a>
   </div>
 </div>
 
