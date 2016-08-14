@@ -152,11 +152,16 @@ form {
 
 form label {
 	min-width: 75px;
+	vertical-align: top;
 }
 
 form input.text-input {
 	padding-left: 3px;
 	width: 250px;
+}
+
+form input.text-area {
+	padding-left: 3px;
 }
 
 select, option {
@@ -371,7 +376,7 @@ select, option {
 
 /* Responsiveness for smaller width */
 @media (max-width: 630px) {
-	select {
+	select, textarea {
 		width: 90%;
 	}
 }
