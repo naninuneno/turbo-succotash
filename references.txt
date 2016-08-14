@@ -1,3 +1,17 @@
 offers:
 http://www.odysseycinemas.co.uk/en/offers.aspx
 http://www.officiallondontheatre.co.uk/buy-tickets/special-offers/
+
+lion king:
+info: http://www.thelionking.co.uk/about-the-show/
+reviews: copied from les mis
+
+curious incident:
+info & reviews: http://www.curiousonstage.com/
+
+james & giant peach:
+info: http://www.polkatheatre.com/whats-on/james-and-the-giant-peach
+reviews: above + mostly made up
+
+matilda:
+info: http://www.officiallondontheatre.co.uk/london-shows/show/item116048/matilda-the-musical/
