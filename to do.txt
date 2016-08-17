@@ -1,0 +1,29 @@
+link up bookings for all shows to main booking page (see Macbeth) - add 'action="booking.html"' to form and add seats to options also
+
+real text for About page and footer instead of Lorem Ipsum
+
+form validation on booking
+
+consistent colours - make all text white? or less off-coloured instead
+
+accessibility guidelines
+
+something for screenreader on booking if p tags aren't read by screenreader - investigate (regarding phoning if you cant use booking seats)
+
+make footer lighter? idk - matches logo atm
+
+
+
+x fix joke offers or at least fix their alt tags
+
+x able to make carousel vertically scale?
+
+x fix stage div on booking page
+
+x fix titles for each page
+
+x something on booking like 'phone X if you're visually impaired for availability and booking'
+
+x add google maps to contact page so it's less empty
+
+x fix pic sizes on Offers when on huge screen so they're equal

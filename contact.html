@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Testing Components</title>
+<title>Contact</title>
 <link rel="stylesheet" type="text/css" href="bootstrap-css/bootstrap.darkly.min.css">
 <link rel="stylesheet" type="text/css" href="styles.css">
 <link rel="stylesheet" href="fontawesome-css/font-awesome.min.css">
@@ -63,20 +63,28 @@
   </div>
 </nav>
 
-<div id="page-content">  
-  <p id="page-title"><b><u>Contact Us</u></b></p>
-  <form id="contact-form">
-    <label for="name">Name</label>
-    <input class="text-input" type="text" name="name" id="name">
-    <br><br>
-    <label for="email">Email</label>
-    <input class="text-input" type="text" name="email" id="email">
-    <br><br>
-    <label for="message">Message</label>
-    <textarea rows="4" cols="50" class="text-area" type="textarea" name="message" id="message"></textarea>
-    <br><br>
-    <input id="contact" type="submit" value="Send">
-  </form>
+<div id="page-content">
+  <div id="contact-section">
+    <p id="page-title"><b><u>Contact Us</u></b></p>
+    <form id="contact-form">
+      <label for="name">Name</label>
+      <input class="text-input" type="text" name="name" id="name">
+      <br><br>
+      <label for="email">Email</label>
+      <input class="text-input" type="text" name="email" id="email">
+      <br><br>
+      <label for="message">Message</label>
+      <textarea rows="4" cols="50" class="text-area" type="textarea" name="message" id="message"></textarea>
+      <br><br>
+      <input id="contact" type="submit" value="Send">
+    </form>
+  </div>
+  <div class="map">
+    <p><b><u>Find Us</u></b></p>
+    <div id="googleMap">
+      <iframe id="gmapIframe" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Queens+Road,+Belfast,+United+Kingdom&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe>
+    </div>
+  </div>
 </div>
 
 <!-- Footer -->
@@ -147,5 +155,6 @@
 
 <script type="text/javascript" src="bootstrap-js/jquery-2.2.4.min.js"></script>
 <script type="text/javascript" src="bootstrap-js/bootstrap.min.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAtWrixU8a0MGCiaqcL8odye_u7H3C0E7g"></script>
 </body>
 </html>
