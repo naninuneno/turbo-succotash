@@ -2,16 +2,16 @@
 (function() {
 	var showParam = getQueryVariable("show");
 	var timeParam = getQueryVariable("time");
-	var emailParam = getQueryVariable("email");
-	// replace html encoding with @ symbol for email address
-	emailParam = emailParam.replace(/%40/g, "@")
+	var seatsParam = getQueryVariable("seats");
 
 	var show = document.getElementById("show");
 	var time = document.getElementById("time");
-	var email = document.getElementById("email");
+	var seats = document.getElementById("seats");
+	var price = document.getElementById("price");
 
 	show.innerHTML = showParam;
 	time.innerHTML = timeParam;
-	email.innerHTML = emailParam;
+	seats.innerHTML = seatsParam + " at &pound;25.00 each";
 
+	price.innerHTML = "&pound;" + (parseInt(seatsParam) * 25.00);
 })();

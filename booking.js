@@ -33,13 +33,13 @@ for (var i = 0; i < allcells.length; i++) {
 }
 
 function setSingleSeatBooked(cell) {
-	var seatsNo = parseInt(seatNumberLabel.innerHTML);
+	var seatsNo = seatNumberLabel.getAttribute("value");
 	if (cell.style.backgroundColor == "green") {
 		cell.style.backgroundColor = "orange";
-		seatNumberLabel.innerHTML = ++seatsNo; 
+		seatNumberLabel.setAttribute("value", ++seatsNo); 
 	} else if (cell.style.backgroundColor == "orange") {
 		cell.style.backgroundColor = "green";
-		seatNumberLabel.innerHTML = --seatsNo;
+		seatNumberLabel.setAttribute("value", --seatsNo);
 	}
 }
 
@@ -64,19 +64,35 @@ var bookingSubmit = document.getElementById("booking-submit");
 
 bookingSubmit.onclick = function() {
 	var emailValidation = document.getElementById("email-validation");
+	var seatsValidation = document.getElementById("seats-validation");
 	var bookingConfirmation = document.getElementById("booking-confirm");
 	// clear previous text in fields for multiple form submissions
 	emailValidation.innerHTML = "";
+	seatsValidation.innerHTML = "";
 	bookingConfirmation.innerHTML = "";
+
+	// set false on any invalid entry
+	var validEntry = true;
 
 	var emailField = document.getElementById("booking-email");
 	var email = emailField.value;
 	if (email == null || email == "") {
 		emailValidation.innerHTML = "Please enter an email address";
+		validEntry = false;
 	// simple regex validation for a valid email address - <something>@<something>.<something>
 	} else if (email.search(/.+@.+\..+/) == -1) {
 		emailValidation.innerHTML = "Please enter a valid email address";
-	} else {
+		validEntry = false;
+	}
+
+	var seatsField = document.getElementById("seats-number");
+	var seats = seatsField.value;
+	if (!(parseInt(seats) > 0)) {
+		seatsValidation.innerHTML = "Please choose at least 1 seat";
+		validEntry = false;
+	}
+
+	if (validEntry) {
 		bookingConfirmation.innerHTML = "Booking confirmed!";
 
 		// create receipt button if not already exists
