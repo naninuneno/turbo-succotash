@@ -161,7 +161,18 @@ form input.text-area {
 	padding-left: 3px;
 }
 
-select, option {
+.form-validation {
+	padding-left: 5px;
+	color: red;
+	font-style: italic;
+}
+
+.form-confirm {
+	padding-top: 5px;
+	color: green;
+}
+
+select, option, button {
 	color: black;
 }
 

@@ -10,6 +10,7 @@
 <html>
 <head>
 <title>Contact</title>
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/ >
 <link rel="stylesheet" type="text/css" href="bootstrap-css/bootstrap.darkly.min.css">
 <link rel="stylesheet" type="text/css" href="styles.css">
 <link rel="stylesheet" href="fontawesome-css/font-awesome.min.css">
@@ -67,15 +68,22 @@
   <div id="contact-section">
     <p id="page-title"><b><u>Contact Us</u></b></p>
     <form id="contact-form">
-      <label for="name">Name</label>
-      <input class="text-input" type="text" name="name" id="name">
-      <br><br>
-      <label for="email">Email</label>
-      <input class="text-input" type="text" name="email" id="email">
-      <br><br>
-      <label for="message">Message</label>
-      <textarea rows="4" cols="50" class="text-area" type="textarea" name="message" id="message"></textarea>
-      <br><br>
+      <label for="contact-name">Name</label>
+      <input class="text-input" type="text" name="name" id="contact-name">
+      <span id="name-validation" class="form-validation"></span>
+      <br>
+      <br>
+      <label for="contact-email">Email</label>
+      <input class="text-input" type="text" name="email" id="contact-email">
+      <span id="email-validation" class="form-validation"></span>
+      <br>
+      <br>
+      <label for="contact-message">Message</label>
+      <textarea rows="4" cols="50" class="text-area" type="textarea" name="message" id="contact-message"></textarea>
+      <span id="message-validation" class="form-validation"></span>
+      <br>
+      <p id="contact-confirm" class="form-confirm"></p>
+      <br>
       <input id="contact" type="submit" value="Send">
     </form>
   </div>
@@ -125,7 +133,7 @@
 
     <p class="footer-company-about">
       <span>About the company</span>
-      Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+      Belfast's majestic Harland Theatre has delivered laughter, tears, and applause since 1895.
     </p>
 
     <div class="footer-icons">
@@ -156,5 +164,7 @@
 <script type="text/javascript" src="bootstrap-js/jquery-2.2.4.min.js"></script>
 <script type="text/javascript" src="bootstrap-js/bootstrap.min.js"></script>
 <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAtWrixU8a0MGCiaqcL8odye_u7H3C0E7g"></script>
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="contact.js"></script>
 </body>
 </html>

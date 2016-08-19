@@ -1,15 +1,3 @@
-function getQueryVariable(variable) {
-   var query = window.location.search.substring(1);
-   var vars = query.split("&");
-   for (var i=0; i<vars.length; i++) {
-       var pair = vars[i].split("=");
-       if (pair[0] == variable) {
-       	 return pair[1];
-       }
-   }
-   return false;
-}
-
 // set attributes on Booking form based on if params were passed from an individual show
 (function() {
 	var showParam = getQueryVariable("show");
@@ -21,6 +9,7 @@ function getQueryVariable(variable) {
 		}
 	}
 	if (timeParam) {
+		timeParam.replace(/\+/, " ");
 		var timeOption = document.querySelector("[value='" + timeParam + "']")
 		if (timeOption) {
 			timeOption.setAttribute("selected", "");
@@ -68,3 +57,31 @@ function setSeatsBooked() {
   		}
 	}
 }
+
+// form validation
+var form = document.getElementById("booking-form");
+var bookingSubmit = document.getElementById("booking-submit");
+
+bookingSubmit.onclick = function() {
+	var emailValidation = document.getElementById("email-validation");
+	var bookingConfirmation = document.getElementById("booking-confirm");
+	// clear previous text in fields for multiple form submissions
+	emailValidation.innerHTML = "";
+	bookingConfirmation.innerHTML = "";
+
+	var emailField = document.getElementById("booking-email");
+	var email = emailField.value;
+	if (email == null || email == "") {
+		emailValidation.innerHTML = "Please enter an email address";
+	// simple regex validation for a valid email address - <something>@<something>.<something>
+	} else if (email.search(/.+@.+\..+/) == -1) {
+		emailValidation.innerHTML = "Please enter a valid email address";
+	} else {
+		bookingConfirmation.innerHTML = "Booking confirmed!";
+
+		// create receipt button if not already exists
+		if (!document.getElementById("receipt")) {
+			bookingConfirmation.outerHTML += "<input id=\"receipt\" type=\"submit\" value=\"View Receipt\">";			
+		}
+	}
+};

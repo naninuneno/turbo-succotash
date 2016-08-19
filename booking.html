@@ -10,6 +10,7 @@
 <html>
 <head>
 <title>Booking</title>
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/ >
 <link rel="stylesheet" type="text/css" href="bootstrap-css/bootstrap.darkly.min.css">
 <link rel="stylesheet" type="text/css" href="styles.css">
 <link rel="stylesheet" href="fontawesome-css/font-awesome.min.css">
@@ -65,32 +66,40 @@
 
 <div id="page-content">
   <p id="page-title"><b><u>Book Show</u></b></p>
-  <form id="booking-form">
+  <!-- blank target to open receipt in a new tab -->
+  <!-- no submit input on form until a successful booking is made and a 'Receipt' submit button is created -->
+  <form id="booking-form" action="receipt.html" target="_blank">
     <label for="booking-show">Show</label>
     <select name="show" id="booking-show">
       <option value="curious-incident">The Curious Incident of the Dog in the Night Time</option>
       <option value="james-giant-peach">James and the Giant Peach</option>
       <option value="les-mis">Les Miserables</option>
       <option value="lion-king">The Lion King</option>
-      <option value="macbeth">Macbeth</option>
+      <option value="Macbeth">Macbeth</option>
       <option value="matilda">Matilda</option>
       <option value="war-horse">War Horse</option>
     </select>
     <br><br>
     <label for="booking-time">Time</label>
     <select name="time" id="booking-time">
-      <option value="2016-09-01-15-00">September 1st 2016 - 15:00 | 56 Seats</option>
-      <option value="2016-09-01-19-00">September 1st 2016 - 19:00 | 62 Seats</option>
-      <option value="2016-09-03-17-00">September 3rd 2016 - 17:00 | 20 Seats</option>
-      <option value="2016-09-04-19-00">September 4th 2016 - 19:00 | 34 Seats</option>
+      <option value="Date - 2016-09-01 -- Time - 15-00">September 1st 2016 - 15:00 | 56 Seats</option>
+      <option value="Date - 2016-09-01 -- Time - 19-00">September 1st 2016 - 19:00 | 62 Seats</option>
+      <option value="Date - 2016-09-03 -- Time - 17-00">September 3rd 2016 - 17:00 | 20 Seats</option>
+      <option value="Date - 2016-09-04 -- Time - 19-00">September 4th 2016 - 19:00 | 34 Seats</option>
     </select>
     <br><br>
-    <label for="email">Email</label>
-    <input class="text-input" type="text" name="email" id="email">
-    <br><br>
+    <label for="booking-email">Email</label>
+    <input class="text-input" type="text" name="email" id="booking-email">
+    <span id="email-validation" class="form-validation"></span>
+    <br>
+    <br>
     <label for="seats">Seats</label>
     <p name="seats" id="seats-number">0</p>
-    <input id="book" type="submit" value="Book">
+    <br>
+    <button id="booking-submit" type="button">Book</button>
+    <br>
+    <br>
+    <p id="booking-confirm" class="form-confirm"></p>
   </form>
   <div id="availability" class="text-center">
     <p>Book your seating below</p>
@@ -262,7 +271,7 @@
 
     <p class="footer-company-about">
       <span>About the company</span>
-      Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+      Belfast's majestic Harland Theatre has delivered laughter, tears, and applause since 1895.
     </p>
 
     <div class="footer-icons">
@@ -292,6 +301,7 @@
 
 <script type="text/javascript" src="bootstrap-js/jquery-2.2.4.min.js"></script>
 <script type="text/javascript" src="bootstrap-js/bootstrap.min.js"></script>
-<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="booking.js"></script>
 </body>
 </html>
