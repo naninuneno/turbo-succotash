@@ -71,12 +71,14 @@
 
       <div id="book-show">
         <p><b><u>Book</u></b><p>
-        <form>
-          <select>
-            <option value="2016-09-01-15-00">September 1st 2016 - 15:00</option>
-            <option value="2016-09-01-19-00">September 1st 2016 - 19:00</option>
-            <option value="2016-09-03-17-00">September 3rd 2016 - 17:00</option>
-            <option value="2016-09-04-19-00">September 4th 2016 - 19:00</option>
+        <form action="booking.html">
+          <input aria-hidden="true" type="hidden" name="show" value="Les Miserables">
+          <label for="time">Time</label>
+          <select name="time" id="time">
+            <option value="Date - 2016-09-01 -- Time - 15-00">September 1st 2016 - 15:00 | 56 Seats</option>
+            <option value="Date - 2016-09-01 -- Time - 19-00">September 1st 2016 - 19:00 | 62 Seats</option>
+            <option value="Date - 2016-09-03 -- Time - 17-00">September 3rd 2016 - 17:00 | 20 Seats</option>
+            <option value="Date - 2016-09-04 -- Time - 19-00">September 4th 2016 - 19:00 | 34 Seats</option>
           </select>
           <br>
           <br>

@@ -179,8 +179,13 @@ input.read-only {
 	color: green;
 }
 
-select, option, button {
+select, option {
 	color: black;
+}
+
+button {
+	color: #464545;
+	background-color: #C0C0C0;
 }
 
 /* Shows / Offers */

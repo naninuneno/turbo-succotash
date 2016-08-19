@@ -1,8 +1,8 @@
-validation for seat number on booking
+
 
 make receipt button look like book button (input vs button elements)
 
-link up bookings for all shows to main booking page (see Macbeth) - add 'action="booking.html"' to form and add seats to options also
+remove seats from booking dropdowns
 
 consistent colours - make all text white? or less off-coloured instead
 
