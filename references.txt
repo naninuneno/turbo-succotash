@@ -1,6 +1,4 @@
 offers:
-http://www.odysseycinemas.co.uk/en/offers.aspx
-http://www.officiallondontheatre.co.uk/buy-tickets/special-offers/
 
 lion king:
 info: http://www.thelionking.co.uk/about-the-show/

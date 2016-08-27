@@ -1,11 +1,6 @@
 <!-- General Documentation
 * sr-only does SCREENREADER STUFF hides an element and says stuff 
 -->
-
-<!-- Accessibility stuff 
-*   especially around carousel e.g. play/pause button for screenreader folk
-*   being able to use site with the keys only - actually not too bad currently
--->
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,7 +18,7 @@
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <!-- TODO : figure out why this is needed -->
+        
         <span class="sr-only">Toggle navigation</span>
         <!-- 3 spans for the 3 lines on the hamburger button -->
         <span class="icon-bar"></span>
@@ -39,7 +34,7 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <!-- sr-only to give context that this is the current menu-item selected -->
+        
         <li><a href="about.html">About </a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shows <span class="caret"></span></a>
